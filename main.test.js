@@ -3,7 +3,37 @@
  ******************/
 
 
+let greeting = 'Hello';
+let sum = 0;
+let prod = 0;
 
+function greet(str) {
+  greeting = "Hello " + str;
+}
+
+function sumOfTwo(num1, num2) {
+  sum = num1 + num2;
+}
+
+function multiply(num1, num2, num3) {
+  prod = num1 * num2 * num3;
+}
+
+function sayHi(name) {
+  return 'Hello ' + name + '!'
+}
+
+function returnWhatISay(str) {
+  return str;
+}
+
+function remainder(num1, num2) {
+  return num1 % num2;
+}
+
+function divide(dividend, divisor) {
+  return dividend / divisor;
+}
 
 
 /*********************************************************************************************************************
@@ -74,15 +104,6 @@ describe('multiply', () => {
     expect(prod).toBe(8);
   })
 });
-
-describe('makeFullName', () => {
-  it(`adds a space and the parameter to name`, () => {
-    const oldName = name;
-    makeFullName('Jaffe')
-    expect(name).toBe(`${oldName} Jaffe`);
-  })
-});
-
 
 describe('returnWhatISay', () => {
   it(`makes_greeting_into_a_string_that_yells_the_greeting_at_someone`, () => {
